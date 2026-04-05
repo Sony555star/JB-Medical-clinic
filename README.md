@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JB Medical Clinic - Ear Care</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 50px 20px; text-align: center; }
+        header h1 { font-size: 3rem; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+        header p { font-size: 1.3rem; }
+        
+        nav { background: rgba(0,0,0,0.1); padding: 15px; }
+        nav ul { list-style: none; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        nav a { color: white; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: 0.3s; }
+        nav a:hover { color: #ffd700; transform: scale(1.1); }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        
+        section { background: white; margin: 20px 0; padding: 40px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
+        h2 { color: #667eea; font-size: 2.2rem; margin-bottom: 20px; text-align: center; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px; }
+        .card { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 12px; text-align: center; transition: all 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 12px 25px rgba(0,0,0,0.3); }
+        .card h3 { font-size: 1.5rem; margin-bottom: 10px; }
+        .card p { font-size: 1rem; }
+        
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+        .gallery img { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); transition: 0.3s; }
+        .gallery img:hover { transform: scale(1.05); }
+        
+        .testimonial { background: #f0f0f0; padding: 20px; border-left: 5px solid #667eea; margin: 15px 0; border-radius: 8px; }
+        .stars { color: gold; font-size: 1.2rem; }
+        
+        form { display: flex; flex-direction: column; gap: 15px; }
+        input, select, textarea { padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem; transition: 0.3s; }
+        input:focus, select:focus, textarea:focus { outline: none; border-color: #667eea; box-shadow: 0 0 8px rgba(102,126,234,0.3); }
+        
+        button { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 30px; border: none; border-radius: 8px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: all 0.3s; }
+        button:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(102,126,234,0.4); }
+        
+        footer { background: #2c3e50; color: white; text-align: center; padding: 30px; margin-top: 40px; }
+        
+        .social-links { margin-top: 15px; }
+        .social-links a { color: #00d4ff; text-decoration: none; margin: 0 10px; font-weight: bold; }
+        
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            nav ul { gap: 10px; }
+            section { padding: 20px; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🦻 Ear Microsuctioning & Wax Removal</h1>
+    <p>Professional Ear Care at JB Medical Clinic</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#booking">Book Now</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>👂 Ear Microsuctioning</h3>
+                <p>Safe, painless removal of earwax using advanced technology. Quick and effective treatment.</p>
+            </div>
+            <div class="card">
+                <h3>💧 Wax Removal</h3>
+                <p>Professional earwax removal with gentle techniques. Immediate relief from impacted cerumen.</p>
+            </div>
+            <div class="card">
+                <h3>🔍 Ear Examination</h3>
+                <p>Comprehensive ear health assessment. Early detection of any hearing issues.</p>
+            </div>
+            <div class="card">
+                <h3>❤️ Aftercare Advice</h3>
+                <p>Personalized guidance to maintain ear health and prevent future issues.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Before & After Results</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300x250/ff6b6b/ffffff?text=Before+Treatment" alt="Before">
+            <img src="https://via.placeholder.com/300x250/51cf66/ffffff?text=After+Treatment" alt="After">
+            <img src="https://via.placeholder.com/300x250/ffd43b/ffffff?text=Patient+Result" alt="Result">
+            <img src="https://via.placeholder.com/300x250/845ef7/ffffff?text=Happy+Patient" alt="Patient">
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Patient Reviews</h2>
+        <div class="testimonial">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Excellent service! My hearing improved immediately. Highly recommended!"</p>
+            <cite><strong>- Sarah M.</strong></cite>
+        </div>
+        <div class="testimonial">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Quick, painless, and very professional. Best ear care experience!"</p>
+            <cite><strong>- John D.</strong></cite>
+        </div>
+        <div class="testimonial">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"The staff was amazing and caring. I felt safe and comfortable throughout."</p>
+            <cite><strong>- Emma W.</strong></cite>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Appointment</h2>
+        <form action="https://formspree.io/f/mldyvopq" method="POST">
+            <input type="text" name="name" placeholder="Your Full Name" required>
+            <input type="email" name="email" placeholder="Your Email Address" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            <input type="date" name="date" required>
+            <select name="time" required>
+                <option>Select Time</option>
+                <option>9:00 AM</option>
+                <option>10:00 AM</option>
+                <option>11:00 AM</option>
+                <option>2:00 PM</option>
+                <option>3:00 PM</option>
+                <option>4:00 PM</option>
+            </select>
+            <select name="service" required>
+                <option>Select Service</option>
+                <option>Ear Microsuctioning</option>
+                <option>Wax Removal</option>
+                <option>Ear Examination</option>
+                <option>Hearing Assessment</option>
+            </select>
+            <button type="submit">✅ Confirm Booking</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/mldyvopq" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">📧 Send Message</button>
+        </form>
+        <div class="social-links">
+            <p style="margin-top: 20px; color: #666;">Follow Us:</p>
+            <a href="https://instagram.com" target="_blank">📱 Instagram</a>
+            <a href="https://facebook.com" target="_blank">📘 Facebook</a>
+            <a href="https://youtube.com" target="_blank">📹 YouTube</a>
+            <a href="https://tiktok.com" target="_blank">🎵 TikTok</a>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 JB Medical Clinic - Ear Microsuctioning & Wax Removal Services</p>
+    <p>Professional • Compassionate • Effective Ear Care</p>
+</footer>
+
+</body>
+</html>
